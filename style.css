@@ -193,6 +193,11 @@ a:link, a:visited, a:hover, a:active {
 code[class*="language-"] {
     font-size: 16px;
 }
+@media only screen and (max-width: 310px) {
+    .hide-item {
+        display: none;
+    }
+}
 @media only screen and (max-width: 768px), screen and (orientation: landscape) and (max-width: 640px) {
     #header {
         display: block;
@@ -270,6 +275,10 @@ code[class*="language-"] {
 }
 #share-buttons-mobile {
     display: none;
+}
+.drop-shadow-img {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
 }
 @media only screen and (max-width: 951px), screen and (orientation: landscape) and (max-width: 640px) {
     #share-buttons {
